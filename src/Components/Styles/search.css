@@ -1,0 +1,108 @@
+.Search-Section {
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-light);
+    height: 100vh;
+    padding: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    .Search-Section {
+        width: 33%;
+    }
+}
+
+.Search-Section .close-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Search-Section .close-wrapper .close-btn {
+    color: var(--color-primary-light);
+    cursor: pointer;
+}
+
+.Search-Section .search-bar {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+}
+
+.Search-Section .search-bar .searchInput-wrapper {
+    width: 80%;
+    height: 100%;
+    border: 1px solid #E7E7EB;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #616475;
+}
+
+.Search-Section .search-bar .searchInput-wrapper .search-icon {
+    width: 18px;
+    margin: 0 10px;
+}
+
+.Search-Section .search-bar .searchInput-wrapper input {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-primary-dark);
+    color: var(--color-primary-light);
+    border: none;
+}
+
+.Search-Section .search-bar .searchInput-wrapper input:focus,
+.Search-Section .search-bar .searchInput-wrapper input:active {
+    height: 100%;
+    border: none;
+    background-color: var(--color-primary-dark);
+}
+
+.Search-Section .search-bar button {
+    width: 18%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: var(--color-button);
+    color: var(--color-primary-light);
+}
+
+.Search-Section .search-bar button:hover {
+    cursor: pointer;
+    color: var(--color-button);
+    background-color: var(--color-primary-light);
+}
+
+.Search-Section ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.Search-Section ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    height: 64px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.Search-Section ul li:hover {
+    cursor: pointer;
+    border: 1px solid #616475;
+}
+
+.Search-Section ul li:hover .navigate-next-icon {
+    display: block;
+    color: #616475;
+}
+
+.Search-Section ul li .navigate-next-icon {
+    display: none;
+    color: #616475;
+}
